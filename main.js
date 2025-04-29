@@ -10,7 +10,7 @@ document.getElementById("submit").addEventListener("click", function(event){
         return;
     }
 
-    if (username === "job" && password === "1234") {
+    if (username === "jobnunez713@gmail.com" && password === "1234") {
         window.location.href = "exito.html";
     } else {
         alert("Usuario o contraseña incorrectos.");
