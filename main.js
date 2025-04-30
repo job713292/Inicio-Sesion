@@ -2,13 +2,13 @@ document.getElementById("submit").addEventListener("click", function(event){
 
     event.preventDefault(); 
 
-
+    let incompleto = document.getElementById("incompleto");
     let error = document.getElementById("error");
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
     if (username === "" || password === "") {
-        alert("Por favor completa todos los campos.");
+        incompleto.style.display = "block";
         return;
     }
 
