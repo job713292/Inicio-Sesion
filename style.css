@@ -64,7 +64,7 @@ body {
 
 .container-2{
     background-color: rgb(43, 87, 13);
-    height: 400px;
+    height: 200px;
     width: 350px;
     border-radius: 25px;
     display: flex;
@@ -76,4 +76,20 @@ body {
     color: white;
     font-size: 30px;
     margin-bottom: 20px;
+}
+
+.error{
+    display: none;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+p{
+    display: flex;
+    color: rgb(255, 0, 0);
+    justify-content: center;
+    align-items: center; 
+    height: 40px;
 }

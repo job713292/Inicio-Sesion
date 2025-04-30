@@ -2,6 +2,8 @@ document.getElementById("submit").addEventListener("click", function(event){
 
     event.preventDefault(); 
 
+
+    let error = document.getElementById("error");
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
@@ -12,8 +14,9 @@ document.getElementById("submit").addEventListener("click", function(event){
 
     if (username === "jobnunez713@gmail.com" && password === "1234") {
         window.location.href = "exito.html";
+        error.style.display = "none"; 
     } else {
-        alert("Usuario o contraseña incorrectos.");
+        error.style.display = "block";
         document.getElementById("username").value = "";
         document.getElementById("password").value = "";
     }
