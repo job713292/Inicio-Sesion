@@ -7,10 +7,12 @@
     <title>INICIO DE SESION</title>
 </head>
 <body>
-
-    <div class="container-2">
-        <h1 class="h1">LOGIN EXITOSO</h1>
-    </div>
-    <script src="main.js"></script>
+    <body>
+        <form onsubmit="addNewTask(event)">
+            <input type="text" id="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+            <button type="submit" class="addTaskButton">+</button>
+        </form>
+        <div id="taskContainer"></div>
+    <script src="tareas.js"></script>
 </body>
 </html>
