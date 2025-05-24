@@ -11,8 +11,8 @@ function addNewTask(event) {
     const task = document.createElement("div");
     task.className = "taskItem";
     task.innerHTML = `
-    <span>${taskText}</span>
-    <button onclick="deleteTask(this)">Eliminar</button>`;
+    <span class="botone">${taskText}</span>
+    <button onclick="deleteTask(this)" class="eliminar">-</button>`;
 
     taskContainer.appendChild(task);
     input.value = "";

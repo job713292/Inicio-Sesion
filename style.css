@@ -97,3 +97,79 @@ p{
 .incompleto{
     display: none;
 }
+
+#taskContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    width: 100%; 
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 300px;
+    height: relative;
+    width: relative; 
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.roundBorder{
+    border-radius: 25px;  
+}
+
+#taskText{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.addTaskButton{
+    background-color: hsl(7, 93%, 42%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.eliminar{
+    background-color: hsl(7, 93%, 42%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #e3e3e3;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+}
+
+.taskItem span {
+    flex: 1;
+    margin-right: 10px;
+    word-break: break-word;
+}
+
