@@ -10,7 +10,9 @@
 
 :root {
     --transparente: rgba(128, 128, 128, 0.1);
-    --secondary-color: hsl(7, 93%, 42%);
+    --botones: #5083b2;
+    --botones-hover: #0b1135;
+    --blanco-transparente: rgba(255, 255, 255, 0.5);
 }
 
 body {
@@ -35,6 +37,7 @@ body {
     height: 400px;
     width: 40%;
     border-radius: 25px;
+    border: var(--blanco-transparente) 1px solid;
 }
 
 
@@ -55,25 +58,12 @@ body {
     font-size: 14px;
     width: 100%;
 }
-
-.input-group label {
-    
-    left: 0;
-    top: 8px;
+::placeholder {
     color: rgb(0, 0, 0);
-   
-    transition: opacity 0.3s ease;
+    font-size: 15px;
 }
-
-.input-group input:focus~label,
-.input-group input:valid~label {
-    opacity: 0;
-}
-
-
-
 #submit {
-    background-color: #5083b2;
+    background-color: var(--botones);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -85,7 +75,7 @@ body {
 }
 
 #submit:hover {
-    background-color: #0b1135;
+    background-color: var(--botones-hover);
 }
 
 #login-form {
@@ -94,22 +84,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-}
-
-.container-2 {
-    background-color: rgb(43, 87, 13);
-    height: 200px;
-    width: 350px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-2 h1 {
-    color: white;
-    font-size: 30px;
-    margin-bottom: 20px;
 }
 
 .error {
@@ -151,22 +125,30 @@ p {
     backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 15px;
+    border: var(--blanco-transparente) 1px solid;
 }
 
-.roundBorder {
-    border-radius: 25px;
+.form input {
+    background: transparent;
+    border: none !important;
+    border-bottom: 1px solid rgb(0, 0, 0) !important;
+    outline: none;
+    padding: 8px 0;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    width: 100%;
 }
+
+
 
 #taskText {
     width: 200px;
     height: 40px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
     padding: 10px;
 }
 
 .addTaskButton {
-    background-color: hsl(7, 93%, 42%);
+    background-color: var(--botones);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -177,7 +159,7 @@ p {
 }
 
 .eliminar {
-    background-color: hsl(7, 93%, 42%);
+    background-color: var(--botones);
     color: white;
     padding: 10px 20px;
     border: none;
