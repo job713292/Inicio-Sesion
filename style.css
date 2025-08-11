@@ -73,7 +73,7 @@ body {
 
 
 #submit {
-    background-color: hsl(7, 93%, 42%);
+    background-color: #5083b2;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -81,10 +81,11 @@ body {
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+    width: 55%;
 }
 
 #submit:hover {
-    background-color: #a30c0c;
+    background-color: #0b1135;
 }
 
 #login-form {
