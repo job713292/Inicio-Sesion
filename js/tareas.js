@@ -1,6 +1,5 @@
 const taskContainer = document.getElementById("taskContainer");
-
-// Function para agregar nueva tarea 
+ 
 function addNewTask(event) {
     event.preventDefault(); 
     const input = document.getElementById("taskText");
